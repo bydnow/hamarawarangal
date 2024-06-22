@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Hamara Warangal Updated NEWS</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Bootstrap Ecommerce Template" name="keywords">
+        <meta content="Bootstrap Ecommerce Template Free Download" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/slick/slick.css" rel="stylesheet">
+        <link href="lib/slick/slick-theme.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Top Header Start -->
+        <div class="top-header">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-md-4">
+                        <div class="logo">
+                            <a href="">
+                                <img src="img/Company_Logo.jpg" alt="Logo">
+                            </a>
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-4">
+                        <div class="search">
+                            <input type="text" placeholder="Search">
+                            <button><i class="fa fa-search"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <div class="social">
+                            <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/people/Bydnow/61554933779103/?mibextid=LQQJ4d"><i class="fab fa-facebook"></i></a>
+                            <a href="https://www.linkedin.com/in/byd-now-79b2802a2/"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/bydnow/?igsh=dDJ4MG90MDFuYjA5"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top Header End -->
+
+
+        <!-- Header Start -->
+        <div class="header">
+            <div class="container">
+                <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                    <a href="#" class="navbar-brand">MENU</a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav m-auto">
+                            
+                            <a href="index.html" class="nav-item nav-link">Home</a>
+                            <a href="#" class="nav-item nav-link">Movies</a>
+                            <a href="#" class="nav-item nav-link">Andhra Pradesh</a>
+                            <!-- <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" id="andhraDropdown" data-toggle="dropdown">Andhra Pradesh</a>
+                                <div class="dropdown-menu">
+                                    <a href="#" class="dropdown-item">Anantapur</a>
+                                    <a href="#" class="dropdown-item">Chittoor</a>
+                                    <a href="#" class="dropdown-item">East Godavari</a>
+                                    <a href="#" class="dropdown-item">Guntur</a>
+                                    <a href="#" class="dropdown-item">Kadapa</a>
+                                </div>
+                            </div> -->
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" id="telanganaDropdown" >Telangana</a>
+                                <div class="dropdown-menu">
+                                    <a href="https://news.abplive.com/topic/adilabad" class="dropdown-item" onclick="fetchNews('adilabad')">Adilabad</a>
+                                    <a href="https://www.siasat.com/news/hyderabad/" class="dropdown-item" onclick="fetchNews('hyderabad')">Hyderabad</a>
+                                    <a href="https://www.ndtv.com/topic/karimnagar-news" class="dropdown-item" onclick="fetchNews('karimnagar')">Karimnagar</a>
+                                    <a href="https://khammam.telangana.gov.in/category/news/" class="dropdown-item" onclick="fetchNews('khammam')">Khammam</a>
+                                    <a href="https://news.abplive.com/topic/mahabubnagar" class="dropdown-item" onclick="fetchNews('mahabubnagar')">Mahabubnagar</a>
+                                    <a href="https://www.thehindu.com/news/national/telangana/increased-patrolling-in-medak-after-communal-tension/article68294312.ece" class="dropdown-item" onclick="fetchNews('medak')">Medak</a>
+                                    <a href="https://www.thehansindia.com/nalgonda" class="dropdown-item" onclick="fetchNews('nalgonda')">Nalgonda</a>
+                                    <a href="https://www.news18.com/topics/nizamabad/" class="dropdown-item" onclick="fetchNews('nizamabad')">Nizamabad</a>
+                                    <a href="https://www.ndtv.com/topic/ranga-reddy-district" class="dropdown-item" onclick="fetchNews('rangareddy')">Rangareddy</a>
+                                    <a href="https://indianexpress.com/about/warangal/" class="dropdown-item" onclick="fetchNews('warangal')">Warangal</a>
+                                </div>
+                            </div>
+                            <a href="#" class="nav-item nav-link">Reviews</a>
+                            <a href="#" class="nav-item nav-link">Web Stories</a>
+                            <a href="#" class="nav-item nav-link">Sports</a>
+                            <a href="#" class="nav-item nav-link">Galleries</a>
+                            <a href="#" class="nav-item nav-link">Business</a>
+                            <a href="#" class="nav-item nav-link">Tech</a>
+                            <a href="#" class="nav-item nav-link">Fashion</a>
+                            <a href="#" class="nav-item nav-link">Crime</a>
+                            <!-- <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+                                <div class="dropdown-menu">
+                                    <a href="#" class="dropdown-item">Sub Item 1</a>
+                                    <a href="#" class="dropdown-item">Sub Item 2</a>
+                                </div>
+                            </div> -->
+                            <a href="single-page.html" class="nav-item nav-link">Single Page</a>
+                            <a href="contact.html" class="nav-item nav-link active">Contact Us</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Header End -->
+        
+        
+        <!-- Breadcrumb Start -->
+        <div class="breadcrumb-wrap">
+            <div class="container-fluid">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active">Contact</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Breadcrumb End -->
+        
+        
+        <!-- Contact Start -->
+        <div class="contact">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <div class="form">
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <input type="text" class="form-control" placeholder="Your Name" />
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <input type="email" class="form-control" placeholder="Your Email" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Subject" />
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="5" placeholder="Message"></textarea>
+                                </div>
+                                <div><button class="btn" type="submit">Send Message</button></div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3794.3271508647827!2d79.5576006246687!3d18.010014784571432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a334f7d899ecd97%3A0xb69cfb1ead454d80!2sGreen%20Square%20Plaza%20Bus%20Stop!5e0!3m2!1sen!2sin!4v1718711857762!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="contact-info">
+                            <h3>Get in Touch</h3>
+                            <p>
+                                BYDNOW offers flexible, high-quality online courses for continuous learning and professional development, tailored to every learner’s needs
+                            </p>
+                            <h4><i class="fa fa-map-marker"></i>4th Floor,Green Square Plaza, Hanamkonda</h4>
+                            <h4><i class="fa fa-envelope"></i>info@bydnow.com</h4>
+                            <h4><i class="fa fa-phone"></i>+917893339729</h4>
+                            <div class="social">
+                                <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+                                <a href="https://www.facebook.com/people/Bydnow/61554933779103/?mibextid=LQQJ4d"><i class="fab fa-facebook"></i></a>
+                                <a href="https://www.linkedin.com/in/byd-now-79b2802a2/"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://www.instagram.com/bydnow/?igsh=dDJ4MG90MDFuYjA5"><i class="fab fa-instagram"></i></a>
+                                <a href="http://bydinstutions@gmail.com"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact End -->
+        
+        
+        <!-- Footer Start -->
+        <div class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h3 class="title">Useful Links</h3>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">FAQs</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Terms of Service</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h3 class="title">Quick Links</h3>
+                            <ul>
+                                <li><a href="#">Our Courses</a></li>
+                                <li><a href="#">News Feed</a></li>
+                                <li><a href="#">Terms and Conditions</a></li>
+                                <li><a href="#">Refund Policy</a></li>
+                                <li><a href="#">Promotions</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h3 class="title">Get in Touch</h3>
+                            <div class="contact-info">
+                                <p><i class="fa fa-map-marker"></i>4th Floor,Green Square Plaza, Hanamkonda</p>
+                                <p><i class="fa fa-envelope"></i>info@bydnow.com</p>
+                                <p><i class="fa fa-phone"></i>+917893339729</p>
+                                <div class="social">
+                                    <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://www.facebook.com/people/Bydnow/61554933779103/?mibextid=LQQJ4d"><i class="fab fa-facebook"></i></a>
+                                    <a href="https://www.linkedin.com/in/byd-now-79b2802a2/"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://www.instagram.com/bydnow/?igsh=dDJ4MG90MDFuYjA5"><i class="fab fa-instagram"></i></a>
+                                    <a href="http://bydinstutions@gmail.com"><i class="fab fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h3 class="title">Newsletter</h3>
+                            <div class="newsletter">
+                                <p>
+                                    BYDNOW offers flexible, high-quality online courses for continuous learning and professional development, tailored to every learner’s needs
+                                </p>
+                                <form>
+                                    <input class="form-control" type="email" placeholder="Your email here">
+                                    <button class="btn">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Footer Bottom Start -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 copyright">
+                        <p>Copyright &copy; <a href="index.html">Hamara Warangal</a>. All Rights Reserved</p>
+                    </div>
+					
+					<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Footer Bottom End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/slick/slick.min.js"></script>
+
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Hamara Warangal Updated NEWS</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Bootstrap Ecommerce Template" name="keywords">
+    <meta content="Bootstrap Ecommerce Template Free Download" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+
+    <!-- CSS Libraries -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/slick/slick.css" rel="stylesheet">
+    <link href="lib/slick/slick-theme.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    
+</head>
+
+<body>
+    <!-- Top Header Start -->
+    <div class="top-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-3 col-md-4">
+                    <div class="logo">
+                        <a href="">
+                            <img src="img/Company_Logo.jpg" alt="Logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-4">
+                    <div class="search">
+                        <input type="text" placeholder="Search">
+                        <button><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="social">
+                        <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/people/Bydnow/61554933779103/?mibextid=LQQJ4d"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/byd-now-79b2802a2/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/bydnow/?igsh=dDJ4MG90MDFuYjA5"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Top Header End -->
+
+    <!-- Header Start -->
+    <div class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                <a href="#" class="navbar-brand">MENU</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav m-auto">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="#" class="nav-item nav-link">Movies</a>
+                        <a href="#" class="nav-item nav-link">Andhra Pradesh</a>
+                        
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="telanganaDropdown" >Telangana</a>
+                            <div class="dropdown-menu">
+                                <a href="https://news.abplive.com/topic/adilabad" class="dropdown-item" onclick="fetchNews('adilabad')">Adilabad</a>
+                                <a href="https://www.siasat.com/news/hyderabad/" class="dropdown-item" onclick="fetchNews('hyderabad')">Hyderabad</a>
+                                <a href="https://www.ndtv.com/topic/karimnagar-news" class="dropdown-item" onclick="fetchNews('karimnagar')">Karimnagar</a>
+                                <a href="https://khammam.telangana.gov.in/category/news/" class="dropdown-item" onclick="fetchNews('khammam')">Khammam</a>
+                                <a href="https://news.abplive.com/topic/mahabubnagar" class="dropdown-item" onclick="fetchNews('mahabubnagar')">Mahabubnagar</a>
+                                <a href="https://www.thehindu.com/news/national/telangana/increased-patrolling-in-medak-after-communal-tension/article68294312.ece" class="dropdown-item" onclick="fetchNews('medak')">Medak</a>
+                                <a href="https://www.thehansindia.com/nalgonda" class="dropdown-item" onclick="fetchNews('nalgonda')">Nalgonda</a>
+                                <a href="https://www.news18.com/topics/nizamabad/" class="dropdown-item" onclick="fetchNews('nizamabad')">Nizamabad</a>
+                                <a href="https://www.ndtv.com/topic/ranga-reddy-district" class="dropdown-item" onclick="fetchNews('rangareddy')">Rangareddy</a>
+                                <a href="https://indianexpress.com/about/warangal/" class="dropdown-item" onclick="fetchNews('warangal')">Warangal</a>
+                            </div>
+                        </div>
+                        <a href="#" class="nav-item nav-link">Reviews</a>
+                        <a href="#" class="nav-item nav-link">Web Stories</a>
+                        <a href="#" class="nav-item nav-link">Sports</a>
+                        <a href="#" class="nav-item nav-link">Galleries</a>
+                        <a href="#" class="nav-item nav-link">Business</a>
+                        <a href="#" class="nav-item nav-link">Tech</a>
+                        <a href="#" class="nav-item nav-link">Fashion</a>
+                        <a href="#" class="nav-item nav-link">Crime</a>
+                        <a href="single-page.html" class="nav-item nav-link">Single Page</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Top News Start -->
+    <div class="latest-news">
+        <div class="container"></div>
+            <div class="section-title">
+                <h3>Latest News from Telangana</h3>
+                
+            </div>
+            <div id="latest-news-content" class="row"></div>
+        </div>
+    </div>
+    <!-- Top News End -->
+
+    <!-- News Content Start -->
+    <div class="news-content" id="news-content">
+        <!-- News will be loaded here based on the selected district -->
+    </div>
+    <!-- News Content End -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/slick/slick.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
